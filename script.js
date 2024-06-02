@@ -288,19 +288,9 @@ function previousTrack(){
     playTrack()
 }
 
-function seekTo(){
-    currentTrack.currentTime = seekSlider.value
-    console.log("seekTo")
-}
-
-seekSlider.addEventListener('click', () => {
-    console.log('click-progress')
-    seekTo()
-})
-
-seekSlider.onchange = function (){
-    seekTo()
-    console.log("on-change")
+trackProgress.onchange = function(){
+    currentTrack.play();
+    playTrack()
 }
 
 function setUpdate(){
