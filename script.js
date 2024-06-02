@@ -293,11 +293,6 @@ function seekTo(){
     console.log("seekTo")
 }
 
-seekSlider.addEventListener('click', () => {
-    seekTo()
-    console.log('click-progress')
-})
-
 function setUpdate(){
     if (!isNaN(currentTrack.duration)){
         seekPosition = currentTrack.currentTime * (100 / currentTrack.duration);
