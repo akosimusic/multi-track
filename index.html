@@ -1,0 +1,305 @@
+<html lang="en">
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDPG5GBYCS"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-PDPG5GBYCS');
+        </script>   
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-P5CJGCH2');
+        </script>
+        <!-- End Google Tag Manager -->
+         
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>akosimusic.online</title>
+        <link type="text/css" href="style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5CJGCH2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div id="overlay-menu" class="overlay-menu">
+            <div class="overlay-content">
+                <div class="overlay-header">
+                    <button class="no-fill-btn-m" id="close-menu-btn"><image class="icon-white" src="icons/x.png" id="close-menu-icon"></image></button>
+                </div>
+                
+                <div class="overlay-box overlay-about">
+                    <image src="logo/logo gradient.svg" class="overlay-about-logo"></image>
+                    <div class="caption-white overlay-about-text">
+                        <b>About akosimusic.ph</b><br>
+                        akosimusic.ph is a physical music distribution company that invests on the
+                        rise of the creative industries in the market, merging with technology. It 
+                        is a brand that circulates music through tangible collectible items that 
+                        engage with its customers.
+                    </div>
+                    <div class="overlay-btn-container">
+                        <button class="overlay-form-btn" id="menu-learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="overlay-box overlay-forms">
+                    <div class="overlay-heading h2-orange">Your feedback matters to us!</div>
+                    <div class="overlay-subheading caption-white">Report any issues or share us your thoughts.</div>
+                    <div class="overlay-btn-container">
+                        <button class="overlay-form-btn" id="error-form-btn">Error Form</button>
+                        <button class="overlay-form-btn" id="feedback-form-btn">Feedback Form</button>
+                    </div>
+                </div>
+                
+                <div class="overlay-box overlay-socials">
+                    <div class="overlay-heading h2-orange">Connect with us!</div>
+                    <div class="overlay-subheading caption-white">Keep in touch and stay updated.</div>
+                    <div class="overlay-socials-container">
+                        <button class="overlay-socials-btn" id="menu-facebook-btn"><image src="icons/facebook.png" class="icon-white"></image> Facebook</button>
+                        <button class="overlay-socials-btn" id="menu-instagram-btn"><image src="icons/instagram.png" class="icon-white"></image> Instagram</button>
+                        <button class="overlay-socials-btn"><image src="icons/mail.png" class="icon-white"></image> akosimusic8@gmail.com</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="header" id="header">
+            <button class="no-fill-btn-m" id="open-menu-btn"><image src="icons/menu.png" class="icon-white"></button>
+            <button class="header-logo-btn"><image src="logo/beta white.svg" class="header-logo-icon"></button>
+        </div>
+
+        <div class="popup-notifications" id="popup-notifications">
+            <div class="popup-containers">
+                <image class="popup-image" src="images/retap-popup.png"></image>
+                <div class="popup-title h1-orange">Times Up!</div>
+                <div class="popup-description body-white"><b>Please close this tab and scan your card on your phone</b> to access exclusive Akosi Music content from your favorite artists!  </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="player">
+                <div class="flip-card-container">
+                    <div class="flip-card" id="flip-card">
+                        
+                        <div class="card-front card-face" id="card-front">
+                            <button class="orange-fill-btn-l" id="btn-front-flip"><img src="icons/flip-card.png" class="icon-white"></button>
+                        </div>
+                        
+                        <div class="card-back card-face">
+                            <div class="card-back-content">
+                                <div class="card-back-details">
+                                    <div class="footnote-orange"><b>Music Card Details</b></div>
+                                    <div class="body-white" id="card-desc-text">null</div>
+                                </div>
+                                <div class="card-back-details">
+                                    <div class="footnote-orange"><b>Music Card Release Date</b></div>
+                                    <div class="body-white" id="card-release-text">null</div>
+                                </div>
+                                <div class="card-back-details">
+                                    <div class="footnote-orange"><b>Music Card Rarity</b></div>
+                                    <div class="body-white" id="card-rarity-text">null</div>
+                                    <div class="footnote-white" id="card-subrarity-text">null</div>
+                                </div>
+                                <div>
+                                    <div class="footnote-orange"><b>No. of Music Cards Created</b></div>
+                                    <div class="body-white" id="card-count-text">null</div>
+                                </div>
+                            </div>
+
+                            <div class="card-back-footer">
+                                <button class="orange-fill-btn-l" id="btn-back-flip"><img src="icons/flip-card.png" class="icon-white"></button>
+                                <div class="card-back-footer-details">
+                                    <div class="card-back-serial-no caption-white">SRN-ABC-AB0000-00000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="player-details">
+                    <div class="h4-white" id="track-name">Candy</div>
+                    <div class="body-white" id="track-artist">Franco Emil</div>
+                </div>
+
+                <div class="player-controls-new">
+                    <audio id="track-audio">
+                        <source type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="progress-container">
+                        <div class="current-time">00:00</div>
+                        <div class="total-duration">00:00</div>
+                    </div>
+
+                    <div class="slider-container">
+                        <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="0"
+                            class="seek-slider"
+                            id="progress"
+                            onchange="seekTo()" 
+                        />
+                    </div>
+
+                    <div class="player-btns">
+                        <button class="no-fill-btn-l" id="previous-track" onclick="previousTrack()">
+                            <img class="icon-white" src="icons/previous-track.png">
+                        </button>
+                        <button class="orange-fill-btn-l playpause-track" id="play-track-btn" onclick="playpauseTrack()">
+                            <img class="icon-white" src="icons/play-track.png">
+                        </button>
+                        <button class="no-fill-btn-l" id="next-track" onclick="nextTrack()"">
+                            <img class="icon-white" src="icons/next-track.png">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="player-categories">
+                    <div class="categories">
+                        <button class="category-btn" id="artist-category-btn">Artist</button>
+                        <button class="category-btn" id="lyrics-category-btn">Lyrics</button>
+                        <button class="category-btn" id="support-category-btn">Support</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="player-content">
+            <div class="content-artist hidden-content" id="artist-category-content">
+                <div class="artist-profile">
+                    <image class="artist-profile-photo" id="artist-profile-photo">
+                    <div class="artist-profile-details">
+                        <div class="h3-white">ako si</div>
+                        <div class="h1-orange artist-name" id="artist-profile-name">null</div>
+                        <div class="artist-social-media">
+                            <div class="artist-social-link">
+                                <button class="orange-fill-btn-s" id="artist-facebook"><image src="icons/facebook.png" class="icon-white"></image></button>
+                            </div>
+                            <div class="artist-social-link">
+                                <button class="orange-fill-btn-s" id="artist-instagram"><image src="icons/instagram.png" class="icon-white"></image></button>
+                            </div>
+                            <div class="artist-social-link">
+                                <button class="orange-fill-btn-s" id="artist-youtube"><image src="icons/youtube.png" class="icon-white"></image></button>
+                            </div>
+                            <div class="artist-social-link">
+                                <button class="orange-fill-btn-s" id="artist-spotify"><image src="icons/spotify.png" class="icon-white"></image></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="artist-description caption-white" id="artist-profile-desc">
+                    Franco Emil is a music producer, composer, and guitarist whose wide musical taste ranges from the classical and folk to the eclectic sounds of jazz, pop, 
+                    and electronica. His influences developed from his artistry for film score, sound design, and exploration of collaborations among artists with varied 
+                    backgrounds. Apart from this, his is also the lead guitarist and one of the composers and arrangers of the band Why July. He debuted his first instrumental, 
+                    lo-fi album “My Side” in 2021 and his latest solo release is an EP entitled “Here I Am”.
+                </div>
+            </div>
+
+            <div class="content-lyrics hidden-content" id="lyrics-category-content">
+                <div class="lyrics-title h4-orange" id="lyrics-title">Candy Lyrics</div>
+                    <div class="lyrics-content caption-white" id="lyrics-script">
+                        Writing this on a breezy Friday <br>
+                        Typing this on my keyboard, it's my way <br>
+                        Just a taste and my heart start beating <br>
+                        Bursting colors in my room and I'm seeing <br>
+                        Strawberry skies <br>
+                        Candy castle in your eyes <br>
+                        Looking good in that pretty red sweater <br>
+                        I ain't SUGA but I'm dreaming <br>
+                        I bet it's like a candy <br>
+                        It's so sweet <br>
+                        Like a glazed lollipop <br>
+                        I want it <br>
+                        Your smile is like soda pop <br>
+                        So bubbly <br>
+                        Sugar rush inside me <br>
+                        Makes me so happy <br>
+                        Candy <br>
+                        It's so sweet <br>
+                        Like it's made of honey <br>
+                        I want it <br>
+                        Butterflies around me <br>
+                        I'm carefree <br>
+                        Sugar rush inside me <br>
+                        My sweet Candy <br>
+                        I hope you know <br>
+                        You're beautiful just as you are <br>
+                        Can't get enough of this fantasy <br>
+                        My Vanellope <br>
+                        I'm like a kid in this arcade <br>
+                        But how does it feel <br>
+                        To be loved by someone like you <br>
+                        I wanna know, or maybe no <br>
+                        Gummy bears, M&Ms, and everything nice <br>
+                        It's like a <br>
+                        Candy <br>
+                        It's so sweet <br>
+                        Like a glazed lollipop <br>
+                        I want it <br>
+                        Your smile is like soda pop <br>
+                        So bubbly <br>
+                        Sugar rush inside me <br>
+                        Makes me so happy <br>
+                        It's so sweet <br>
+                        I want it <br>
+                        I'm carefree <br>
+                        My sweet Candy <br>
+                        I bet it's like a candy <br>
+                        It's so sweet <br>
+                        Like a glazed lollipop <br>
+                        I want it <br>
+                        Your smile is like soda pop <br>
+                        So bubbly <br>
+                        Sugar rush inside me <br>
+                        Makes me so happy <br>
+                        Candy <br>
+                        It's so sweet <br>
+                        Like it's made of honey <br>
+                        I want it <br>
+                        Butterflies around me <br>
+                        I'm carefree <br>
+                        Sugar rush inside me <br>
+                        My sweet Candy <br>
+                    </div>
+            </div>
+
+            <div class="content-support hidden-content" id="support-category-content">
+                <image class="support-image" src="images/cover-cards.png"></image>
+                <div class="support-title">
+                    <div class="support-heading h1-orange">Support Our</div>
+                    <div class="support-heading h1-orange">Crowdfunding Campaign</div>
+                </div>
+                
+                <div class="support-text body-white">Akosi Music is a start-up project created by individuals in hopes of uplifting aspiriing Filipino musicians through digital and physical platforms.</div>
+                <div class="support-btn-container">
+                    <button class="overlay-form-btn" id="support-learn-more-btn">Learn More</button>
+                    <button class="overlay-form-btn" id="support-campaign-btn">Support Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text footnote-white">&#169; 2024 Akosi Music</div>
+        </div>
+    </body>
+</html>
