@@ -208,7 +208,6 @@ let isPlaying = false
 let updateTimer
 
 let currentTrack = document.getElementById("track-audio")
-let trackProgress = document.getElementById("progress")
 let currentTime = document.querySelector(".current-time")
 let totalDuration = document.querySelector(".total-duration")
 
@@ -275,8 +274,6 @@ function nextTrack(){
     playTrack()
 }
 
-let seekPosition = 0
-
 function previousTrack(){
     trackIndex -= 1
     trackIndexChecker()
@@ -288,12 +285,9 @@ function previousTrack(){
     playTrack()
 }
 
-trackProgress.onchange = function(){
-    currentTrack.play();
-    playTrack()
-}
-
 function setUpdate(){
+    let seekPosition = 0
+
     if (!isNaN(currentTrack.duration)){
         seekPosition = currentTrack.currentTime * (100 / currentTrack.duration);
         seekSlider.value = seekPosition;
@@ -327,6 +321,11 @@ function setUpdate(){
     console.log("setUpdate")
 }
 
+function seekTo() {
+    let seekTo = currentTrack.duration * (seekSlider.value / 100);
+    currentTrack.currentTime = seekTo;
+  }
+
 //Page Load
 window.onload = function(){
     cardDescText.innerHTML = cardInfo.cardDesc
@@ -344,14 +343,6 @@ window.onload = function(){
     loadTrack(trackIndex)
     updateLyrics()
 }
-
-/* SINGLE TRACK CONTROLS
-trackProgress.onchange = function(){
-    currentTrack.play();
-    
-    playTrack()
-}
-*/
 
 // Card Flip Buttons
 const flipCard = document.getElementById("flip-card")
